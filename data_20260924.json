@@ -1,7 +1,7 @@
 {
  "_meta": {
   "script_version": "v2026.09.24-2",
-  "built_kst": "2026-09-24T14:35:39.230736+00:00",
+  "built_kst": "2026-09-24T15:05:26.812292+00:00",
   "us_session": "2026-09-23",
   "kst_date": "2026-09-24"
  },
@@ -9,7 +9,7 @@
   "yfinance_bulk": {
    "ok": true,
    "n": 367,
-   "sec": 18.6
+   "sec": 11.4
   },
   "indices": {
    "ok": true,
@@ -39,7 +39,7 @@
   "radar": {
    "ok": true,
    "n": 8,
-   "sec": 0.4
+   "sec": 0.5
   },
   "ewy_spread": {
    "ok": true,
@@ -49,7 +49,7 @@
   "fred": {
    "ok": true,
    "n": 12,
-   "sec": 2.4
+   "sec": 301.1
   },
   "econ_calendar": {
    "ok": true,
@@ -59,12 +59,12 @@
   "earnings_calendar": {
    "ok": true,
    "n": 20,
-   "sec": 1.1
+   "sec": 3.2
   },
   "rss_CNBC": {
    "ok": true,
    "n": 12,
-   "sec": 0.4
+   "sec": 0.1
   },
   "rss_MarketWatch": {
    "ok": true,
@@ -74,12 +74,12 @@
   "rss_YahooFinance": {
    "ok": true,
    "n": 12,
-   "sec": 0.1
+   "sec": 0.3
   },
   "rss_SeekingAlpha": {
    "ok": true,
    "n": 7,
-   "sec": 0.2
+   "sec": 0.1
   },
   "rss_Fed": {
    "ok": true,
@@ -219,38 +219,38 @@
  "asia": {
   "^N225": {
    "name": "니케이225",
-   "last": 65858.11,
-   "chg_pct": 1.29,
+   "last": 65748.25,
+   "chg_pct": 1.12,
    "asof": "2026-09-24"
   },
   "^TWII": {
    "name": "대만가권",
-   "last": 48033.54,
-   "chg_pct": -0.26,
+   "last": 48024.6,
+   "chg_pct": -0.28,
    "asof": "2026-09-24"
   },
   "^HSI": {
    "name": "항셍",
-   "last": 24690.76,
-   "chg_pct": -0.58,
+   "last": 24713.12,
+   "chg_pct": -0.49,
    "asof": "2026-09-24"
   },
   "000001.SS": {
    "name": "상해종합",
-   "last": 3900.35,
+   "last": 3900.18,
    "chg_pct": -0.92,
    "asof": "2026-09-24"
   },
   "ES=F": {
    "name": "S&P선물",
-   "last": 7753.5,
-   "chg_pct": -0.24,
+   "last": 7746.75,
+   "chg_pct": -0.33,
    "asof": "2026-09-24"
   },
   "NQ=F": {
    "name": "나스닥선물",
-   "last": 30689.25,
-   "chg_pct": -0.25,
+   "last": 30651.75,
+   "chg_pct": -0.37,
    "asof": "2026-09-24"
   }
  },
@@ -2950,51 +2950,51 @@
  "fred": {
   "DGS10": {
    "name": "미국채10년",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "DGS2": {
    "name": "미국채2년",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "T10Y2Y": {
    "name": "장단기금리차",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "T10YIE": {
    "name": "기대인플레10년",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "BAMLH0A0HYM2": {
    "name": "하이일드스프레드",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "BAMLC0A0CM": {
    "name": "투자등급스프레드",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "UNRATE": {
    "name": "실업률",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "FEDFUNDS": {
    "name": "기준금리",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "ICSA": {
    "name": "신규실업수당",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "PAYEMS": {
    "name": "비농업고용",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "CPIAUCSL": {
    "name": "소비자물가",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   },
   "CPILFESL": {
    "name": "근원물가",
-   "error": "HTTP Error 503: Service Unavailable"
+   "error": "The read operation timed out"
   }
  },
  "calendar": {
@@ -3342,9 +3342,29 @@
  "news": {
   "CNBC": [
    {
+    "title": "Judge lifts Trump ban on CNN, MS NOW, Politico from White House",
+    "link": "https://www.cnbc.com/2026/09/24/judge-lifts-trumps-white-house-ban-on-cnn-ms-now-and-politico.html",
+    "published": "Thu, 24 Sep 2026 06:04:53 GMT"
+   },
+   {
     "title": "U.S.-China trade truce extended for two months, Bessent says, as Xi begins state visit",
     "link": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
     "published": "Thu, 24 Sep 2026 04:55:59 GMT"
+   },
+   {
+    "title": "China's AI chip blitz arms Xi with a message for Trump: 'You can't choke us off'",
+    "link": "https://www.cnbc.com/2026/09/24/trump-xi-china-summit-ai-export-control-nvidia-huawei-alibaba-.html",
+    "published": "Thu, 24 Sep 2026 03:38:03 GMT"
+   },
+   {
+    "title": "As Trump and Xi meet, Chinese automakers could be a Pandora's box for U.S. auto industry",
+    "link": "https://www.cnbc.com/2026/09/23/trump-xi-chinese-automakers-us-access.html",
+    "published": "Wed, 23 Sep 2026 21:25:01 GMT"
+   },
+   {
+    "title": "Tehran takes aim at Canada for not condemning Trump's threat to destroy Iran",
+    "link": "https://www.cnbc.com/2026/09/24/us-iran-war-trump-hormuz-canada-carney-bessent.html",
+    "published": "Thu, 24 Sep 2026 05:47:43 GMT"
    },
    {
     "title": "Chinese authorities reportedly in possession of F-35 components in Hong Kong",
@@ -3362,24 +3382,14 @@
     "published": "Thu, 24 Sep 2026 04:26:39 GMT"
    },
    {
-    "title": "France faces a fresh budget battle that threatens to topple another government as debt costs spiral",
-    "link": "https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html",
-    "published": "Thu, 24 Sep 2026 05:00:02 GMT"
-   },
-   {
-    "title": "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn",
-    "link": "https://www.cnbc.com/2026/09/24/hormuz-blacksea-ukraine-iran-food-security-united-nations-.html",
-    "published": "Thu, 24 Sep 2026 04:02:26 GMT"
-   },
-   {
-    "title": "Historic day for global bonds as 10-year Treasury and JGB yields hit highest in decades",
-    "link": "https://www.cnbc.com/2026/09/24/japan-jgb-bond-yield-treasurys.html",
-    "published": "Thu, 24 Sep 2026 04:06:54 GMT"
-   },
-   {
     "title": "Inside India newsletter: Apple set to take a bigger bite of the world’s second-largest smartphone market",
     "link": "https://www.cnbc.com/2026/09/24/india-apple-iphone-samsung-chinese-smartphones.html",
     "published": "Thu, 24 Sep 2026 00:01:54 GMT"
+   },
+   {
+    "title": "America’s Asian allies want a Trump-Xi truce — but not at their expense",
+    "link": "https://www.cnbc.com/2026/09/24/uss-asian-allies-want-a-trump-xi-truce-but-not-at-their-expense.html",
+    "published": "Thu, 24 Sep 2026 01:56:26 GMT"
    },
    {
     "title": "Oil industry warns a diesel export ban will raise fuel prices as Trump weighs restrictions",
@@ -3390,16 +3400,6 @@
     "title": "Why McDonald's is following Walmart and Amazon into the advertising business",
     "link": "https://www.cnbc.com/2026/09/23/why-mcdonalds-is-building-an-advertising-business.html",
     "published": "Wed, 23 Sep 2026 20:21:17 GMT"
-   },
-   {
-    "title": "10-year Treasury yield rockets to 19-year high. Here's what's driving the spike",
-    "link": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
-    "published": "Wed, 23 Sep 2026 20:07:50 GMT"
-   },
-   {
-    "title": "Mark Zuckerberg debuts $1,299 Meta VR Glasses and Muse Charm pendant as part of AI agent push",
-    "link": "https://www.cnbc.com/2026/09/23/mark-zuckerberg-1299-meta-vr-glasses-ai-agent.html",
-    "published": "Thu, 24 Sep 2026 01:56:50 GMT"
    }
   ],
   "MarketWatch": [
@@ -3466,57 +3466,77 @@
     "published": "2026-09-22T20:15:19Z"
    },
    {
-    "title": "XPLR Infrastructure LP (XIFR) Was a Top Contributor for Gabelli Focused Growth and Income Fund",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/xplr-infrastructure-lp-xifr-top-173202389.html",
-    "published": "2026-09-22T17:32:02Z"
+    "title": "Should you apply for multiple credit cards at once?",
+    "link": "https://finance.yahoo.com/personal-finance/credit-cards/article/should-you-apply-for-multiple-credit-cards-at-once-180015761.html",
+    "published": "2026-09-22T18:00:15Z"
    },
    {
-    "title": "Herc Holdings Inc. (HRI) Was Gabelli Focused Growth and Income Fund’s Top Q2 Contributor",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/herc-holdings-inc-hri-gabelli-173214130.html",
-    "published": "2026-09-22T17:32:14Z"
+    "title": "ETF Zoo: 6 Pundits Walk Into a Bar",
+    "link": "https://finance.yahoo.com/markets/options/articles/etf-zoo-6-pundits-walk-180901573.html",
+    "published": "2026-09-22T18:09:01Z"
    },
    {
-    "title": "Will Lowe's Stock Keep Falling? Unusually Heavy LOW Put Options Activity May Imply This - Or Does It?",
-    "link": "https://finance.yahoo.com/markets/options/articles/lowes-stock-keep-falling-unusually-173002768.html",
-    "published": "2026-09-22T17:30:02Z"
+    "title": "A $200 Billion Reason to Buy GE Vernova Stock",
+    "link": "https://finance.yahoo.com/energy/articles/200-billion-reason-buy-ge-181346344.html",
+    "published": "2026-09-22T18:13:46Z"
    },
    {
-    "title": "Paramount Settlement Triggers WBD Breakout. How It Compares To Past Media Mergers.",
-    "link": "https://www.investors.com/news/paramount-skydance-warner-bros-discovery-disney-fox-netflix-media-mergers/?src=A00220&amp;yptr=yahoo",
-    "published": "2026-09-22T17:36:09Z"
+    "title": "Netskope (NTSK) Is Tackling a Major AI Agent Security Gap. Can Skylight Deepen Its Edge?",
+    "link": "https://finance.yahoo.com/technology/ai/articles/netskope-ntsk-tackling-major-ai-185139812.html",
+    "published": "2026-09-22T18:51:39Z"
    },
    {
-    "title": "Binance takes $100M stake in Circle to boost USDC",
-    "link": "https://finance.yahoo.com/markets/crypto/articles/binance-takes-100m-stake-circle-173309864.html",
-    "published": "2026-09-22T17:33:09Z"
+    "title": "Can UNH Stock Keep Growing Earnings While Its Sales Stall?",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/unh-stock-keep-growing-earnings-180959149.html",
+    "published": "2026-09-22T18:09:59Z"
    },
    {
-    "title": "Dow Jones Tech Titan Amazon Eyes Buy Point Amid Battle With Key Support Level",
-    "link": "https://www.investors.com/stock-lists/stocks-near-a-buy-zone/dow-jones-amazon-stock-amzn-key-level/?src=A00220&amp;yptr=yahoo",
-    "published": "2026-09-22T17:26:43Z"
+    "title": "SanDisk Just Scored a New 'Buy' Rating. Here's Why.",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/sandisk-just-scored-buy-rating-184617334.html",
+    "published": "2026-09-22T18:46:17Z"
    },
    {
-    "title": "Tabi Connect, Kleinschmidt partner to automate freight quoting",
-    "link": "https://finance.yahoo.com/technology/articles/tabi-connect-kleinschmidt-partner-automate-174105793.html",
-    "published": "2026-09-22T17:41:05Z"
+    "title": "Dear Microsoft Stock Fans, Mark Your Calendars for September 24",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/dear-microsoft-stock-fans-mark-185339421.html",
+    "published": "2026-09-22T18:53:39Z"
    },
    {
-    "title": "This Stock Is Trading at New All-Time Highs and Looks Like a Great Long-Term Winner",
-    "link": "https://finance.yahoo.com/markets/stocks/articles/stock-trading-time-highs-looks-175002793.html",
-    "published": "2026-09-22T17:50:02Z"
+    "title": "Corporate bond buyers get picky with flood of AI debt",
+    "link": "https://finance.yahoo.com/markets/options/articles/corporate-bond-buyers-picky-flood-100410778.html",
+    "published": "2026-09-22T18:20:50Z"
    },
    {
-    "title": "Leveraged loan fund assets rise as Fed turns hawkish",
-    "link": "https://finance.yahoo.com/economy/policy/articles/leveraged-loan-fund-assets-rise-175112734.html",
-    "published": "2026-09-22T17:51:12Z"
+    "title": "This High-Growth Energy Stock Continues to Plunge. Don’t Rush to Buy the Dip.",
+    "link": "https://finance.yahoo.com/energy/articles/high-growth-energy-stock-continues-183638227.html",
+    "published": "2026-09-22T18:36:38Z"
    },
    {
-    "title": "Caris Life Sciences Coasts Past A Buy Point; Why This Texas Biotech Researcher Deserves A Look",
-    "link": "https://www.investors.com/research/caris-life-sciences-cai-stock-biotech-texas/?src=A00220&amp;yptr=yahoo",
-    "published": "2026-09-22T18:01:22Z"
+    "title": "On Holding’s ‘Premium Playbook’ Pays Off: Stock Jumps on $7 Billion Sales Goal and $1 Billion Buyback Plan",
+    "link": "https://www.barrons.com/articles/on-holding-stock-revenue-buyback-plan-mbappe-4346c213?siteid=yhoof2&amp;yptr=yahoo",
+    "published": "2026-09-22T18:09:00Z"
    }
   ],
   "SeekingAlpha": [
+   {
+    "title": "OpenAI agent hacked Australian Medicare portal, PM slams delayed notification",
+    "link": "https://seekingalpha.com/news/4646426-openai-agent-hacked-australian-medicare-portal-pm-slams-delayed-notification?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Thu, 24 Sep 2026 01:51:16 -0400"
+   },
+   {
+    "title": "Trump Jr.’s 1789 Capital said to seek $3B for second fund to expand startup bets",
+    "link": "https://seekingalpha.com/news/4646410-trump-jrs-1789-capital-said-to-seek-3b-for-second-fund-to-expand-startup-bets?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Thu, 24 Sep 2026 01:50:32 -0400"
+   },
+   {
+    "title": "Medallion Bank prices $55M reopening of Series G preferred stock offering",
+    "link": "https://seekingalpha.com/news/4646420-medallion-bank-prices-55m-reopening-of-series-g-preferred-stock-offering?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Thu, 24 Sep 2026 01:38:50 -0400"
+   },
+   {
+    "title": "Nvidia-backed Firmus Grid begins premarketing for A$7B ASX IPO: report",
+    "link": "https://seekingalpha.com/news/4646409-nvidia-backed-firmus-grid-begins-premarketing-for-a7b-asx-ipo-report?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Thu, 24 Sep 2026 01:37:33 -0400"
+   },
    {
     "title": "Judge lifts Trump's White House ban on CNN, MS NOW, Politico: report",
     "link": "https://seekingalpha.com/news/4646427-judge-lifts-trumps-white-house-ban-on-cnn-ms-now-politico-report?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
@@ -3531,26 +3551,6 @@
     "title": "Honda to build new hybrid vehicle plant in Ohio with up to $2.5B investment - report",
     "link": "https://seekingalpha.com/news/4646407-honda-to-build-new-hybrid-vehicle-plant-in-ohio-with-up-to-25b-investment---report?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
     "published": "Thu, 24 Sep 2026 01:05:35 -0400"
-   },
-   {
-    "title": "Japan Flash PMI shows softening growth across manufacturing and services",
-    "link": "https://seekingalpha.com/news/4646423-japan-flash-pmi-shows-softening-growth-across-manufacturing-and-services?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
-    "published": "Thu, 24 Sep 2026 00:51:12 -0400"
-   },
-   {
-    "title": "US, China agree to extend trade truce by two months to Jan. 10, Bessent says",
-    "link": "https://seekingalpha.com/news/4646425-us-china-agree-to-extend-trade-truce-by-two-months-to-jan-10-bessent-says?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
-    "published": "Thu, 24 Sep 2026 00:50:01 -0400"
-   },
-   {
-    "title": "Meta unveils keychain-sized Charm gadget for Muse AI agent",
-    "link": "https://seekingalpha.com/news/4646408-meta-unveils-keychain-sized-charm-gadget-for-muse-ai-agent?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
-    "published": "Thu, 24 Sep 2026 00:47:05 -0400"
-   },
-   {
-    "title": "Australian unemployment rises to 4.6% despite strong job creation",
-    "link": "https://seekingalpha.com/news/4646422-australian-unemployment-rises-to-46-despite-strong-job-creation?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
-    "published": "Thu, 24 Sep 2026 00:44:00 -0400"
    }
   ],
   "Fed": [
