@@ -9,5 +9,16 @@
   ],
   "actual_gap_pct": null,
   "hit": null
+ },
+ {
+  "kst_date": "2026-09-25",
+  "us_session": "2026-09-24",
+  "forecast_pct": -1.51,
+  "band": [
+   -1.05,
+   -1.51
+  ],
+  "actual_gap_pct": null,
+  "hit": null
  }
 ]
