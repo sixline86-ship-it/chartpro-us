@@ -1,0 +1,1120 @@
+{
+ "_meta": {
+  "script_version": "v2026.09.24-2",
+  "built_kst": "2026-09-29T10:12:25.904047+00:00",
+  "us_session": "2026-09-28",
+  "kst_date": "2026-09-29"
+ },
+ "_sources": {
+  "yfinance_bulk": {
+   "ok": true,
+   "n": 366,
+   "sec": 9.3
+  },
+  "indices": {
+   "ok": true,
+   "n": 15,
+   "sec": 0.0
+  },
+  "asia": {
+   "ok": true,
+   "n": 6,
+   "sec": 0.0
+  },
+  "kr_adr": {
+   "ok": true,
+   "n": 7,
+   "sec": 0.0
+  },
+  "sectors": {
+   "ok": true,
+   "n": 11,
+   "sec": 0.0
+  },
+  "themes": {
+   "ok": true,
+   "n": 71,
+   "sec": 0.1
+  },
+  "radar": {
+   "ok": false,
+   "err": "'DataFrame' object has no attribute 'vol_ratio'",
+   "sec": 0.4
+  },
+  "ewy_spread": {
+   "ok": false,
+   "err": "EWY에 2026-09-28 데이터 없음",
+   "sec": 0.1
+  },
+  "fred": {
+   "ok": true,
+   "n": 12,
+   "sec": 300.9
+  },
+  "econ_calendar": {
+   "ok": true,
+   "n": 49,
+   "sec": 0.0
+  },
+  "earnings_calendar": {
+   "ok": true,
+   "n": 18,
+   "sec": 2.1
+  },
+  "rss_CNBC": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.1
+  },
+  "rss_MarketWatch": {
+   "ok": true,
+   "n": 10,
+   "sec": 0.0
+  },
+  "rss_YahooFinance": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.0
+  },
+  "rss_SeekingAlpha": {
+   "ok": true,
+   "n": 7,
+   "sec": 0.1
+  },
+  "rss_Fed": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.0
+  }
+ },
+ "indices": {
+  "^GSPC": {
+   "name": "S&P500",
+   "group": null,
+   "last": 7683.69,
+   "chg_pct": -0.77,
+   "y1_low": 6343.72,
+   "y1_high": 7798.99,
+   "y1_pos": 92.1
+  },
+  "^IXIC": {
+   "name": "나스닥",
+   "group": null,
+   "last": 26820.38,
+   "chg_pct": -0.92,
+   "y1_low": 20794.64,
+   "y1_high": 27244.28,
+   "y1_pos": 93.4
+  },
+  "^DJI": {
+   "name": "다우",
+   "group": null,
+   "last": 51481.51,
+   "chg_pct": -0.67,
+   "y1_low": 45166.64,
+   "y1_high": 54349.12,
+   "y1_pos": 68.8
+  },
+  "^RUT": {
+   "name": "러셀2000",
+   "group": null,
+   "last": 2817.91,
+   "chg_pct": -0.69,
+   "y1_low": 2305.11,
+   "y1_high": 3068.42,
+   "y1_pos": 67.2
+  },
+  "^SOX": {
+   "name": "필라델피아반도체",
+   "group": null,
+   "last": 12465.24,
+   "chg_pct": -1.61,
+   "y1_low": 6315.11,
+   "y1_high": 14634.72,
+   "y1_pos": 73.9
+  },
+  "^VIX": {
+   "name": "VIX",
+   "group": null,
+   "last": 16.07,
+   "chg_pct": 8.07,
+   "y1_low": 13.47,
+   "y1_high": 31.05,
+   "y1_pos": 14.8
+  },
+  "^VIX9D": {
+   "name": "VIX 9일",
+   "group": null,
+   "last": 14.39,
+   "chg_pct": 12.77,
+   "y1_low": 9.17,
+   "y1_high": 30.64,
+   "y1_pos": 24.3
+  },
+  "^VIX3M": {
+   "name": "VIX 3개월",
+   "group": null,
+   "last": 18.23,
+   "chg_pct": 1.67,
+   "y1_low": 17.42,
+   "y1_high": 29.27,
+   "y1_pos": 6.8
+  },
+  "^TNX": {
+   "name": "미국채10년",
+   "group": null,
+   "last": 5.24,
+   "chg_pct": 1.08,
+   "y1_low": 3.95,
+   "y1_high": 5.24,
+   "y1_pos": 100.0
+  },
+  "DX-Y.NYB": {
+   "name": "달러인덱스",
+   "group": null,
+   "last": 101.23,
+   "chg_pct": 0.26,
+   "y1_low": 96.22,
+   "y1_high": 101.61,
+   "y1_pos": 92.9
+  },
+  "CL=F": {
+   "name": "WTI",
+   "group": null,
+   "last": 93.48,
+   "chg_pct": 1.16,
+   "y1_low": 55.27,
+   "y1_high": 112.95,
+   "y1_pos": 66.2
+  },
+  "GC=F": {
+   "name": "금",
+   "group": null,
+   "last": 4156.2,
+   "chg_pct": -3.82,
+   "y1_low": 3855.2,
+   "y1_high": 5318.4,
+   "y1_pos": 20.6
+  },
+  "KRW=X": {
+   "name": "원달러",
+   "group": null,
+   "last": 1354.51,
+   "chg_pct": -0.94,
+   "y1_low": 1339.17,
+   "y1_high": 1554.48,
+   "y1_pos": 7.1
+  },
+  "EWY": null,
+  "BTC-USD": null
+ },
+ "asia": {
+  "^N225": {
+   "name": "니케이225",
+   "last": 65260.81,
+   "chg_pct": -1.66,
+   "asof": "2026-09-29"
+  },
+  "^TWII": {
+   "name": "대만가권",
+   "last": 48024.6,
+   "chg_pct": -0.28,
+   "asof": "2026-09-24"
+  },
+  "^HSI": {
+   "name": "항셍",
+   "last": 24510.09,
+   "chg_pct": -1.01,
+   "asof": "2026-09-25"
+  },
+  "000001.SS": {
+   "name": "상해종합",
+   "last": 3888.37,
+   "chg_pct": -1.22,
+   "asof": "2026-09-24"
+  },
+  "ES=F": {
+   "name": "S&P선물",
+   "last": 7739.25,
+   "chg_pct": -0.83,
+   "asof": "2026-09-28"
+  },
+  "NQ=F": {
+   "name": "나스닥선물",
+   "last": 30525.5,
+   "chg_pct": -1.18,
+   "asof": "2026-09-28"
+  }
+ },
+ "kr_adr": {
+  "PKX": null,
+  "SKM": null,
+  "KB": null,
+  "SHG": null,
+  "WF": null,
+  "LPL": null,
+  "KT": null
+ },
+ "sectors": {
+  "XLK": null,
+  "XLC": null,
+  "XLY": null,
+  "XLP": null,
+  "XLE": null,
+  "XLF": null,
+  "XLV": null,
+  "XLI": null,
+  "XLB": null,
+  "XLU": null,
+  "XLRE": null
+ },
+ "themes": {},
+ "radar": null,
+ "ewy_spread": null,
+ "fred": {
+  "DGS10": {
+   "name": "미국채10년",
+   "error": "The read operation timed out"
+  },
+  "DGS2": {
+   "name": "미국채2년",
+   "error": "The read operation timed out"
+  },
+  "T10Y2Y": {
+   "name": "장단기금리차",
+   "error": "The read operation timed out"
+  },
+  "T10YIE": {
+   "name": "기대인플레10년",
+   "error": "The read operation timed out"
+  },
+  "BAMLH0A0HYM2": {
+   "name": "하이일드스프레드",
+   "error": "The read operation timed out"
+  },
+  "BAMLC0A0CM": {
+   "name": "투자등급스프레드",
+   "error": "The read operation timed out"
+  },
+  "UNRATE": {
+   "name": "실업률",
+   "error": "The read operation timed out"
+  },
+  "FEDFUNDS": {
+   "name": "기준금리",
+   "error": "The read operation timed out"
+  },
+  "ICSA": {
+   "name": "신규실업수당",
+   "error": "The read operation timed out"
+  },
+  "PAYEMS": {
+   "name": "비농업고용",
+   "error": "The read operation timed out"
+  },
+  "CPIAUCSL": {
+   "name": "소비자물가",
+   "error": "The read operation timed out"
+  },
+  "CPILFESL": {
+   "name": "근원물가",
+   "error": "The read operation timed out"
+  }
+ },
+ "calendar": {
+  "economic": [
+   {
+    "date": "2026-09-28T08:15:00-04:00",
+    "title": "FOMC Member Bowman Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-28T13:25:00-04:00",
+    "title": "FOMC Member Cook Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-28T13:30:00-04:00",
+    "title": "FOMC Member Barkin Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T09:00:00-04:00",
+    "title": "HPI m/m",
+    "impact": "Low",
+    "forecast": "0.1%",
+    "previous": "0.0%"
+   },
+   {
+    "date": "2026-09-29T09:00:00-04:00",
+    "title": "S&P/CS Composite-20 HPI y/y",
+    "impact": "Low",
+    "forecast": "2.2%",
+    "previous": "2.1%"
+   },
+   {
+    "date": "2026-09-29T10:00:00-04:00",
+    "title": "CB Consumer Confidence",
+    "impact": "Medium",
+    "forecast": "89.2",
+    "previous": "89.4"
+   },
+   {
+    "date": "2026-09-29T10:00:00-04:00",
+    "title": "JOLTS Job Openings",
+    "impact": "Medium",
+    "forecast": "7.23M",
+    "previous": "7.27M"
+   },
+   {
+    "date": "2026-09-29T11:00:00-04:00",
+    "title": "FOMC Member Bowman Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T12:40:00-04:00",
+    "title": "FOMC Member Barr Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T13:00:00-04:00",
+    "title": "FOMC Member Goolsbee Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T13:30:00-04:00",
+    "title": "FOMC Member Musalem Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T14:00:00-04:00",
+    "title": "FOMC Member Williams Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T15:00:00-04:00",
+    "title": "FOMC Member Waller Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-29T16:30:00-04:00",
+    "title": "API Weekly Statistical Bulletin",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-30T08:15:00-04:00",
+    "title": "ADP Non-Farm Employment Change",
+    "impact": "Medium",
+    "forecast": "73K",
+    "previous": "38K"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Core PCE Price Index m/m",
+    "impact": "High",
+    "forecast": "0.3%",
+    "previous": "0.2%"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Final GDP q/q",
+    "impact": "High",
+    "forecast": "1.5%",
+    "previous": "1.5%"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Final GDP Price Index q/q",
+    "impact": "Medium",
+    "forecast": "6.4%",
+    "previous": "6.4%"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Goods Trade Balance",
+    "impact": "Low",
+    "forecast": "-116.3B",
+    "previous": "-118.8B"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Personal Income m/m",
+    "impact": "Low",
+    "forecast": "0.5%",
+    "previous": "0.4%"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Personal Spending m/m",
+    "impact": "Low",
+    "forecast": "0.8%",
+    "previous": "0.2%"
+   },
+   {
+    "date": "2026-09-30T08:30:00-04:00",
+    "title": "Prelim Wholesale Inventories m/m",
+    "impact": "Low",
+    "forecast": "0.5%",
+    "previous": "1.3%"
+   },
+   {
+    "date": "2026-09-30T09:45:00-04:00",
+    "title": "Chicago PMI",
+    "impact": "Low",
+    "forecast": "51.2",
+    "previous": "47.1"
+   },
+   {
+    "date": "2026-09-30T10:30:00-04:00",
+    "title": "Crude Oil Inventories",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "3.0M"
+   },
+   {
+    "date": "2026-09-30T13:30:00-04:00",
+    "title": "FOMC Member Barkin Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-30T15:25:00-04:00",
+    "title": "FOMC Member Cook Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-30T17:10:00-04:00",
+    "title": "FOMC Member Goolsbee Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-09-30T18:00:00-04:00",
+    "title": "FOMC Member Kashkari Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T05:30:00-04:00",
+    "title": "Challenger Job Cuts y/y",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-38.5%"
+   },
+   {
+    "date": "2026-10-01T08:30:00-04:00",
+    "title": "Unemployment Claims",
+    "impact": "Medium",
+    "forecast": "201K",
+    "previous": "197K"
+   },
+   {
+    "date": "2026-10-01T09:05:00-04:00",
+    "title": "FOMC Member Barkin Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T09:05:00-04:00",
+    "title": "FOMC Member Collins Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T09:05:00-04:00",
+    "title": "FOMC Member Schmid Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T09:45:00-04:00",
+    "title": "Final Manufacturing PMI",
+    "impact": "Low",
+    "forecast": "56.9",
+    "previous": "57.0"
+   },
+   {
+    "date": "2026-10-01T10:00:00-04:00",
+    "title": "FOMC Member Waller Speaks",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T10:00:00-04:00",
+    "title": "ISM Manufacturing PMI",
+    "impact": "Medium",
+    "forecast": "54.8",
+    "previous": "54.6"
+   },
+   {
+    "date": "2026-10-01T10:00:00-04:00",
+    "title": "Construction Spending m/m",
+    "impact": "Low",
+    "forecast": "0.0%",
+    "previous": "-0.5%"
+   },
+   {
+    "date": "2026-10-01T10:00:00-04:00",
+    "title": "ISM Manufacturing Prices",
+    "impact": "Low",
+    "forecast": "72.9",
+    "previous": "71.1"
+   },
+   {
+    "date": "2026-10-01T10:15:00-04:00",
+    "title": "Omdia Total Vehicle Sales",
+    "impact": "Low",
+    "forecast": "16.3M",
+    "previous": "16.8M"
+   },
+   {
+    "date": "2026-10-01T10:30:00-04:00",
+    "title": "Natural Gas Storage",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "53B"
+   },
+   {
+    "date": "2026-10-01T13:30:00-04:00",
+    "title": "FOMC Member Jefferson Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T15:00:00-04:00",
+    "title": "FOMC Member Bowman Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T15:30:00-04:00",
+    "title": "FOMC Member Cook Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-01T18:45:00-04:00",
+    "title": "FOMC Member Logan Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-02T08:30:00-04:00",
+    "title": "Average Hourly Earnings m/m",
+    "impact": "High",
+    "forecast": "0.3%",
+    "previous": "0.3%"
+   },
+   {
+    "date": "2026-10-02T08:30:00-04:00",
+    "title": "Non-Farm Employment Change",
+    "impact": "High",
+    "forecast": "90K",
+    "previous": "162K"
+   },
+   {
+    "date": "2026-10-02T08:30:00-04:00",
+    "title": "Unemployment Rate",
+    "impact": "High",
+    "forecast": "4.1%",
+    "previous": "4.1%"
+   },
+   {
+    "date": "2026-10-02T10:00:00-04:00",
+    "title": "Factory Orders m/m",
+    "impact": "Low",
+    "forecast": "0.1%",
+    "previous": "0.9%"
+   },
+   {
+    "date": "2026-10-02T10:00:00-04:00",
+    "title": "FOMC Member Logan Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   }
+  ],
+  "earnings": [
+   {
+    "symbol": "CCL",
+    "name": "Carnival Corporation Ltd.",
+    "time": "time-pre-market",
+    "eps_forecast": "$1.36",
+    "market_cap": "$30,474,692,600"
+   },
+   {
+    "symbol": "KMX",
+    "name": "CarMax Inc",
+    "time": "time-pre-market",
+    "eps_forecast": "$0.68",
+    "market_cap": "$8,118,733,800"
+   },
+   {
+    "symbol": "AIR",
+    "name": "AAR Corp.",
+    "time": "time-after-hours",
+    "eps_forecast": "",
+    "market_cap": "$4,674,454,000"
+   },
+   {
+    "symbol": "UEC",
+    "name": "Uranium Energy Corp.",
+    "time": "time-pre-market",
+    "eps_forecast": "($0.04)",
+    "market_cap": "$4,656,749,100"
+   },
+   {
+    "symbol": "CNXC",
+    "name": "Concentrix Corporation",
+    "time": "time-after-hours",
+    "eps_forecast": "$2.40",
+    "market_cap": "$1,652,376,960"
+   },
+   {
+    "symbol": "IPX",
+    "name": "IperionX Limited",
+    "time": "time-not-supplied",
+    "eps_forecast": "($0.16)",
+    "market_cap": "$678,768,130"
+   },
+   {
+    "symbol": "TMQ",
+    "name": "Trilogy Metals Inc.",
+    "time": "time-not-supplied",
+    "eps_forecast": "($0.01)",
+    "market_cap": "$552,786,050"
+   },
+   {
+    "symbol": "AREC",
+    "name": "American Resources Corporation",
+    "time": "time-not-supplied",
+    "eps_forecast": "($0.06)",
+    "market_cap": "$203,245,424"
+   },
+   {
+    "symbol": "ELME",
+    "name": "Elme Communities",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$153,724,144"
+   },
+   {
+    "symbol": "ZENA",
+    "name": "ZenaTech, Inc.",
+    "time": "time-not-supplied",
+    "eps_forecast": "($0.21)",
+    "market_cap": "$121,997,920"
+   },
+   {
+    "symbol": "INTG",
+    "name": "The Intergroup Corporation",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$71,619,904"
+   },
+   {
+    "symbol": "ALPS",
+    "name": "ALPS Group Inc",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$65,894,524"
+   },
+   {
+    "symbol": "BRLS",
+    "name": "Borealis Foods Inc.",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$29,833,996"
+   },
+   {
+    "symbol": "AAME",
+    "name": "Atlantic American Corporation",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$27,740,230"
+   },
+   {
+    "symbol": "NAII",
+    "name": "Natural Alternatives International, Inc.",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$10,981,651"
+   },
+   {
+    "symbol": "SEGG",
+    "name": "Sports Entertainment Gaming Global Corporation ",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": "$9,354,728"
+   },
+   {
+    "symbol": "BRTX",
+    "name": "BioRestorative Therapies, Inc.",
+    "time": "time-not-supplied",
+    "eps_forecast": "$3",
+    "market_cap": "$3,521,876"
+   },
+   {
+    "symbol": "GTEN",
+    "name": "Gores Holdings X, Inc.",
+    "time": "time-not-supplied",
+    "eps_forecast": "",
+    "market_cap": ""
+   }
+  ]
+ },
+ "news": {
+  "CNBC": [
+   {
+    "title": "OpenAI abandons plan to release upcoming model as safety concerns escalate",
+    "link": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html",
+    "published": "Mon, 28 Sep 2026 23:19:46 GMT"
+   },
+   {
+    "title": "Trump announces plan for $15 billion steel plant, would be largest in U.S. history",
+    "link": "https://www.cnbc.com/2026/09/28/trump-steel-plant-iowa.html",
+    "published": "Mon, 28 Sep 2026 21:20:00 GMT"
+   },
+   {
+    "title": "Samsung to inject $1 billion into Nvidia- and KKR-backed AI infrastructure firm",
+    "link": "https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html",
+    "published": "Tue, 29 Sep 2026 00:00:10 GMT"
+   },
+   {
+    "title": "Supreme Court Justice Alito will not participate in big climate change case next week",
+    "link": "https://www.cnbc.com/2026/09/28/supreme-court-justice-alito-recusal-climate-change-case.html",
+    "published": "Mon, 28 Sep 2026 20:13:00 GMT"
+   },
+   {
+    "title": "Boeing 737 Max 10 certification delayed by software issue, FAA says",
+    "link": "https://www.cnbc.com/2026/09/28/faa-boeing-737-max-10-certification-delay-software-issue.html",
+    "published": "Mon, 28 Sep 2026 20:16:04 GMT"
+   },
+   {
+    "title": "Luckin Coffee, flush with investor cash, weighs entry into Middle East markets",
+    "link": "https://www.cnbc.com/2026/09/29/luckin-coffee-mubadala-middle-east-temasek-centurium-capital.html",
+    "published": "Tue, 29 Sep 2026 01:10:41 GMT"
+   },
+   {
+    "title": "LeBron James is already boosting ticket and merchandise demand for Philadelphia 76ers",
+    "link": "https://www.cnbc.com/2026/09/28/lebron-james-boosts-ticket-jersey-demand-for-nba-philadelphia-76ers.html",
+    "published": "Mon, 28 Sep 2026 22:49:39 GMT"
+   },
+   {
+    "title": "SpaceX launches its massive Starship rocket into orbit for the first time",
+    "link": "https://www.cnbc.com/2026/09/28/spacex-prepares-to-send-starship-rocket-to-orbit-for-first-time.html",
+    "published": "Mon, 28 Sep 2026 16:01:50 GMT"
+   },
+   {
+    "title": "Elon Musk, SpaceXAI subpoenaed by NYC in AI safety investigation",
+    "link": "https://www.cnbc.com/2026/09/28/elon-musk-spacexai-subpoenaed-by-nyc-in-ai-safety-investigation.html",
+    "published": "Mon, 28 Sep 2026 21:08:05 GMT"
+   },
+   {
+    "title": "AMD briefly joined the $1 trillion club. Cramer says its monster run isn’t over",
+    "link": "https://www.cnbc.com/2026/09/28/jim-cramer-amd-lisa-su-agentic-ai.html",
+    "published": "Mon, 28 Sep 2026 22:27:10 GMT"
+   },
+   {
+    "title": "Michael Burry believes the AI bubble 'may burst' sooner than he first believed",
+    "link": "https://www.cnbc.com/2026/09/28/michael-burry-believes-the-ai-bubble-may-burst-sooner-than-he-first-believed.html",
+    "published": "Mon, 28 Sep 2026 20:43:14 GMT"
+   },
+   {
+    "title": "OpenAI sparked Hugging Face bids with early investment offer ahead of Nvidia's $13 billion deal",
+    "link": "https://www.cnbc.com/2026/09/28/openai-spark-hugging-face-bid-war-early-investment-bid-ahead-of-nvidia.html",
+    "published": "Mon, 28 Sep 2026 20:36:55 GMT"
+   }
+  ],
+  "MarketWatch": [
+   {
+    "title": "AMD makes a big bet on the next era of AI with World Labs acquisition",
+    "link": "https://www.marketwatch.com/story/amd-makes-a-big-bet-on-the-next-era-of-ai-7f8a3b3c?mod=mw_rss_topstories",
+    "published": "Tue, 29 Sep 2026 00:03:00 GMT"
+   },
+   {
+    "title": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
+    "link": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 23:00:00 GMT"
+   },
+   {
+    "title": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
+    "link": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 22:45:00 GMT"
+   },
+   {
+    "title": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
+    "link": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 22:35:00 GMT"
+   },
+   {
+    "title": "SpaceX’s next big growth engine isn’t rockets — it’s this play on AI power, analysts say",
+    "link": "https://www.marketwatch.com/story/spacexs-next-big-growth-engine-isnt-rockets-its-this-play-on-ai-power-analysts-say-11963aeb?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 22:03:00 GMT"
+   },
+   {
+    "title": "Nvidia makes a statement with historic $150 billion buyback announcement",
+    "link": "https://www.marketwatch.com/story/nvidia-makes-a-statement-with-historic-150-billion-buyback-announcement-bfab5a22?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 21:27:00 GMT"
+   },
+   {
+    "title": "MongoDB’s stock is down nearly 20% as CEO decamps to Meta",
+    "link": "https://www.marketwatch.com/story/mongodbs-stock-is-down-more-than-20-as-ceo-decamps-to-meta-ad66a942?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 21:23:00 GMT"
+   },
+   {
+    "title": "This AI startup has only 14 employees — and a fresh $10 billion valuation",
+    "link": "https://www.marketwatch.com/story/this-ai-startup-has-only-14-employees-and-a-fresh-10-billion-valuation-5466e081?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 21:19:00 GMT"
+   },
+   {
+    "title": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
+    "link": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 21:00:00 GMT"
+   },
+   {
+    "title": "Bond yields move relentlessly higher, as Wall Street wonders how much more tech stocks can take",
+    "link": "https://www.marketwatch.com/story/bond-yields-move-relentlessly-higher-as-wall-street-wonders-how-much-more-tech-stocks-can-take-dd050c39?mod=mw_rss_topstories",
+    "published": "Mon, 28 Sep 2026 20:43:00 GMT"
+   }
+  ],
+  "YahooFinance": [
+   {
+    "title": "Ennis (EBF) Grows Sales but Earns Less. Are Legal Items Hiding a Better Business?",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/ennis-ebf-grows-sales-earns-015226342.html",
+    "published": "2026-09-23T01:52:26Z"
+   },
+   {
+    "title": "Strive CEO: Bitcoin Could ‘Go to Infinity' as Dollar Debt Crisis Breaks",
+    "link": "https://finance.yahoo.com/markets/crypto/articles/strive-ceo-bitcoin-could-infinity-015100441.html",
+    "published": "2026-09-23T01:51:00Z"
+   },
+   {
+    "title": "Westinghouse Air Brake (WAB) Signs $700 Million-Plus Rail Services Deal. Can Profits Grow?",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/westinghouse-air-brake-wab-signs-014350177.html",
+    "published": "2026-09-23T01:43:50Z"
+   },
+   {
+    "title": "Vista Gold (VGZ) Agrees to Sale. Can its Buyer Fund the Mt Todd Gold Mine?",
+    "link": "https://finance.yahoo.com/markets/commodities/articles/vista-gold-vgz-agrees-sale-014206537.html",
+    "published": "2026-09-23T01:42:06Z"
+   },
+   {
+    "title": "This Little-Known AI Chip Stock Doubled. Its New Chips Now Double Optical Speed",
+    "link": "https://finance.yahoo.com/technology/ai/articles/little-known-ai-chip-stock-042916921.html",
+    "published": "2026-09-23T04:29:16Z"
+   },
+   {
+    "title": "Titan International (TWI) Signs ITM Sale. How Much of the $285 Million is New Cash?",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/titan-international-twi-signs-itm-012718577.html",
+    "published": "2026-09-23T01:26:44Z"
+   },
+   {
+    "title": "May Mobility's SPAC Merger: Is This a Road to Nowhere for Investors?",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/may-mobilitys-spac-merger-road-015000118.html",
+    "published": "2026-09-23T01:50:00Z"
+   },
+   {
+    "title": "SK Hynix Is Eyeing Intel’s (INTC) Ohio Site. Why Micron (MU) Should Pay Attention",
+    "link": "https://finance.yahoo.com/technology/articles/sk-hynix-eyeing-intel-intc-043316388.html",
+    "published": "2026-09-23T04:33:16Z"
+   },
+   {
+    "title": "Pat Gelsinger Just Backed a $100 Million Challenge to Nvidia’s AI Networking Moat. AMD Could Benefit",
+    "link": "https://finance.yahoo.com/technology/ai/articles/pat-gelsinger-just-backed-100-042433352.html",
+    "published": "2026-09-23T04:24:33Z"
+   },
+   {
+    "title": "Lumentum Jumped Nearly 10% While Corning Barely Moved. Is the AI Optics Trade Splitting Apart?",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/lumentum-jumped-nearly-10-while-041957023.html",
+    "published": "2026-09-23T04:19:57Z"
+   },
+   {
+    "title": "Intel (INTC) Could Get a Fresh Valuation for Altera. AMD (AMD) Is the Rival to Watch",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/intel-intc-could-fresh-valuation-041710849.html",
+    "published": "2026-09-23T04:17:10Z"
+   },
+   {
+    "title": "Why AutoZone Stock Rallied Today",
+    "link": "https://finance.yahoo.com/markets/stocks/articles/why-autozone-stock-rallied-today-020051614.html",
+    "published": "2026-09-23T02:00:51Z"
+   }
+  ],
+  "SeekingAlpha": [
+   {
+    "title": "Lockheed Martin's unit gets $155.7M boost for Navy combat systems",
+    "link": "https://seekingalpha.com/news/4647824-lockheed-martins-unit-gets-1557m-boost-for-navy-combat-systems?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 18:11:49 -0400"
+   },
+   {
+    "title": "Magic Empire Global prices $3M offering at $1.12 per unit",
+    "link": "https://seekingalpha.com/news/4647823-magic-empire-global-prices-3m-offering-at-112-per-unit?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 18:04:52 -0400"
+   },
+   {
+    "title": "Orion Digital regains Nasdaq compliance",
+    "link": "https://seekingalpha.com/news/4647822-orion-digital-regains-nasdaq-compliance?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 18:00:49 -0400"
+   },
+   {
+    "title": "Major earnings expected before the bell on Tuesday include:",
+    "link": "https://seekingalpha.com/news/4647539-major-earnings-expected-before-the-bell-on-tuesday-include?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 18:00:20 -0400"
+   },
+   {
+    "title": "RTX's Collins Aerospace unit wins $249.7M U.S. Navy contract",
+    "link": "https://seekingalpha.com/news/4647819-rtxs-collins-aerospace-unit-wins-2497m-us-navy-contract?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 17:58:49 -0400"
+   },
+   {
+    "title": "TempraMed upsizes private placement to C$1.6M",
+    "link": "https://seekingalpha.com/news/4647820-tempramed-upsizes-private-placement-to-c16m?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 17:57:53 -0400"
+   },
+   {
+    "title": "Summit Therapeutics rises after AstraZeneca commits $2B investment",
+    "link": "https://seekingalpha.com/news/4647818-summit-therapeutics-rises-after-astrazeneca-commits-2b-investment?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Mon, 28 Sep 2026 17:49:37 -0400"
+   }
+  ],
+  "Fed": [
+   {
+    "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm]]>",
+    "published": "<![CDATA[Fri, 25 Sep 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm]]>",
+    "published": "<![CDATA[Thu, 24 Sep 2026 18:30:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm]]>",
+    "published": "<![CDATA[Thu, 24 Sep 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm]]>",
+    "published": "<![CDATA[Tue, 22 Sep 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm]]>",
+    "published": "<![CDATA[Fri, 18 Sep 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm]]>",
+    "published": "<![CDATA[Fri, 18 Sep 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve issues FOMC statement",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm]]>",
+    "published": "<![CDATA[Wed, 16 Sep 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm]]>",
+    "published": "<![CDATA[Wed, 16 Sep 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm]]>",
+    "published": "<![CDATA[Fri, 11 Sep 2026 14:00:00 GMT]]>"
+   },
+   {
+    "title": "Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260910a.htm]]>",
+    "published": "<![CDATA[Thu, 10 Sep 2026 20:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm]]>",
+    "published": "<![CDATA[Fri, 4 Sep 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm]]>",
+    "published": "<![CDATA[Thu, 27 Aug 2026 15:00:00 GMT]]>"
+   }
+  ]
+ },
+ "gap_accuracy": {
+  "samples": 0,
+  "hit_rate": null,
+  "recent": [
+   {
+    "kst_date": "2026-09-24",
+    "us_session": "2026-09-23",
+    "forecast_pct": -1.7,
+    "band": [
+     -1.19,
+     -1.7
+    ],
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-09-25",
+    "us_session": "2026-09-24",
+    "forecast_pct": -1.51,
+    "band": [
+     -1.05,
+     -1.51
+    ],
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-09-26",
+    "us_session": "2026-09-25",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-09-29",
+    "us_session": "2026-09-28",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   }
+  ]
+ }
+}
