@@ -1,0 +1,973 @@
+{
+ "_meta": {
+  "script_version": "v2026.09.24-2",
+  "built_kst": "2026-10-28T09:41:02.221088+00:00",
+  "us_session": "2026-10-27",
+  "kst_date": "2026-10-28"
+ },
+ "_sources": {
+  "yfinance_bulk": {
+   "ok": true,
+   "n": 367,
+   "sec": 13.4
+  },
+  "indices": {
+   "ok": true,
+   "n": 15,
+   "sec": 0.0
+  },
+  "asia": {
+   "ok": true,
+   "n": 6,
+   "sec": 0.0
+  },
+  "kr_adr": {
+   "ok": true,
+   "n": 7,
+   "sec": 0.0
+  },
+  "sectors": {
+   "ok": true,
+   "n": 11,
+   "sec": 0.0
+  },
+  "themes": {
+   "ok": true,
+   "n": 71,
+   "sec": 0.1
+  },
+  "radar": {
+   "ok": false,
+   "err": "'DataFrame' object has no attribute 'vol_ratio'",
+   "sec": 0.2
+  },
+  "ewy_spread": {
+   "ok": false,
+   "err": "EWY에 2026-10-27 데이터 없음",
+   "sec": 0.1
+  },
+  "fred": {
+   "ok": true,
+   "n": 12,
+   "sec": 301.2
+  },
+  "econ_calendar": {
+   "ok": true,
+   "n": 26,
+   "sec": 0.2
+  },
+  "earnings_calendar": {
+   "ok": true,
+   "n": 20,
+   "sec": 2.2
+  },
+  "rss_CNBC": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.2
+  },
+  "rss_MarketWatch": {
+   "ok": true,
+   "n": 10,
+   "sec": 0.2
+  },
+  "rss_YahooFinance": {
+   "ok": false,
+   "err": "HTTP Error 404: Not Found",
+   "sec": 0.2
+  },
+  "rss_SeekingAlpha": {
+   "ok": true,
+   "n": 7,
+   "sec": 0.1
+  },
+  "rss_Fed": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.1
+  }
+ },
+ "indices": {
+  "^GSPC": {
+   "name": "S&P500",
+   "group": null,
+   "last": 7722.6,
+   "chg_pct": 0.6,
+   "y1_low": 6343.72,
+   "y1_high": 7818.93,
+   "y1_pos": 93.5
+  },
+  "^IXIC": {
+   "name": "나스닥",
+   "group": null,
+   "last": 26477.81,
+   "chg_pct": 1.18,
+   "y1_low": 20794.64,
+   "y1_high": 27599.79,
+   "y1_pos": 83.5
+  },
+  "^DJI": {
+   "name": "다우",
+   "group": null,
+   "last": 52377.57,
+   "chg_pct": 0.03,
+   "y1_low": 45166.64,
+   "y1_high": 54349.12,
+   "y1_pos": 78.5
+  },
+  "^RUT": {
+   "name": "러셀2000",
+   "group": null,
+   "last": 2818.87,
+   "chg_pct": 1.16,
+   "y1_low": 2305.11,
+   "y1_high": 3068.42,
+   "y1_pos": 67.3
+  },
+  "^SOX": {
+   "name": "필라델피아반도체",
+   "group": null,
+   "last": 11482.5,
+   "chg_pct": 3.6,
+   "y1_low": 6352.07,
+   "y1_high": 14634.72,
+   "y1_pos": 61.9
+  },
+  "^VIX": {
+   "name": "VIX",
+   "group": null,
+   "last": 17.52,
+   "chg_pct": -4.73,
+   "y1_low": 13.47,
+   "y1_high": 31.05,
+   "y1_pos": 23.0
+  },
+  "^VIX9D": {
+   "name": "VIX 9일",
+   "group": null,
+   "last": 16.65,
+   "chg_pct": -7.09,
+   "y1_low": 9.17,
+   "y1_high": 30.64,
+   "y1_pos": 34.8
+  },
+  "^VIX3M": {
+   "name": "VIX 3개월",
+   "group": null,
+   "last": 19.57,
+   "chg_pct": -1.86,
+   "y1_low": 17.42,
+   "y1_high": 29.27,
+   "y1_pos": 18.1
+  },
+  "^TNX": {
+   "name": "미국채10년",
+   "group": null,
+   "last": 4.99,
+   "chg_pct": 0.14,
+   "y1_low": 3.96,
+   "y1_high": 5.31,
+   "y1_pos": 76.4
+  },
+  "DX-Y.NYB": {
+   "name": "달러인덱스",
+   "group": null,
+   "last": 102.33,
+   "chg_pct": 0.36,
+   "y1_low": 96.22,
+   "y1_high": 102.58,
+   "y1_pos": 96.1
+  },
+  "CL=F": {
+   "name": "WTI",
+   "group": null,
+   "last": 100.68,
+   "chg_pct": -1.06,
+   "y1_low": 55.27,
+   "y1_high": 112.95,
+   "y1_pos": 78.7
+  },
+  "GC=F": {
+   "name": "금",
+   "group": null,
+   "last": 4076.6,
+   "chg_pct": 0.95,
+   "y1_low": 3960.5,
+   "y1_high": 5318.4,
+   "y1_pos": 8.5
+  },
+  "KRW=X": {
+   "name": "원달러",
+   "group": null,
+   "last": 1324.77,
+   "chg_pct": 0.23,
+   "y1_low": 1321.76,
+   "y1_high": 1554.48,
+   "y1_pos": 1.3
+  },
+  "EWY": null,
+  "BTC-USD": null
+ },
+ "asia": {
+  "^N225": {
+   "name": "니케이225",
+   "last": 64015.37,
+   "chg_pct": 2.94,
+   "asof": "2026-10-28"
+  },
+  "^TWII": {
+   "name": "대만가권",
+   "last": 46041.43,
+   "chg_pct": -1.81,
+   "asof": "2026-10-22"
+  },
+  "^HSI": {
+   "name": "항셍",
+   "last": 23211.81,
+   "chg_pct": 0.51,
+   "asof": "2026-10-26"
+  },
+  "000001.SS": {
+   "name": "상해종합",
+   "last": 3697.52,
+   "chg_pct": 0.19,
+   "asof": "2026-10-26"
+  },
+  "ES=F": {
+   "name": "S&P선물",
+   "last": 7756.75,
+   "chg_pct": 0.55,
+   "asof": "2026-10-27"
+  },
+  "NQ=F": {
+   "name": "나스닥선물",
+   "last": 29814.0,
+   "chg_pct": 1.28,
+   "asof": "2026-10-27"
+  }
+ },
+ "kr_adr": {
+  "PKX": null,
+  "SKM": null,
+  "KB": null,
+  "SHG": null,
+  "WF": null,
+  "LPL": null,
+  "KT": null
+ },
+ "sectors": {
+  "XLK": null,
+  "XLC": null,
+  "XLY": null,
+  "XLP": null,
+  "XLE": null,
+  "XLF": null,
+  "XLV": null,
+  "XLI": null,
+  "XLB": null,
+  "XLU": null,
+  "XLRE": null
+ },
+ "themes": {
+  "XTN": {
+   "name": "운송(동일가중)",
+   "group": "실물",
+   "last": 100.44,
+   "chg_pct": 2.5,
+   "y1_low": 79.2,
+   "y1_high": 117.71,
+   "y1_pos": 55.2,
+   "amount_musd": 11.9
+  }
+ },
+ "radar": null,
+ "ewy_spread": null,
+ "fred": {
+  "DGS10": {
+   "name": "미국채10년",
+   "error": "The read operation timed out"
+  },
+  "DGS2": {
+   "name": "미국채2년",
+   "error": "The read operation timed out"
+  },
+  "T10Y2Y": {
+   "name": "장단기금리차",
+   "error": "The read operation timed out"
+  },
+  "T10YIE": {
+   "name": "기대인플레10년",
+   "error": "The read operation timed out"
+  },
+  "BAMLH0A0HYM2": {
+   "name": "하이일드스프레드",
+   "error": "The read operation timed out"
+  },
+  "BAMLC0A0CM": {
+   "name": "투자등급스프레드",
+   "error": "The read operation timed out"
+  },
+  "UNRATE": {
+   "name": "실업률",
+   "error": "The read operation timed out"
+  },
+  "FEDFUNDS": {
+   "name": "기준금리",
+   "error": "The read operation timed out"
+  },
+  "ICSA": {
+   "name": "신규실업수당",
+   "error": "The read operation timed out"
+  },
+  "PAYEMS": {
+   "name": "비농업고용",
+   "error": "The read operation timed out"
+  },
+  "CPIAUCSL": {
+   "name": "소비자물가",
+   "error": "The read operation timed out"
+  },
+  "CPILFESL": {
+   "name": "근원물가",
+   "error": "The read operation timed out"
+  }
+ },
+ "calendar": {
+  "economic": [
+   {
+    "date": "2026-10-27T08:15:00-04:00",
+    "title": "ADP Weekly Employment Change",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "18.5K"
+   },
+   {
+    "date": "2026-10-27T08:30:00-04:00",
+    "title": "Core Durable Goods Orders m/m",
+    "impact": "Low",
+    "forecast": "0.6%",
+    "previous": "0.3%"
+   },
+   {
+    "date": "2026-10-27T08:30:00-04:00",
+    "title": "Durable Goods Orders m/m",
+    "impact": "Low",
+    "forecast": "2.0%",
+    "previous": "0.0%"
+   },
+   {
+    "date": "2026-10-27T09:00:00-04:00",
+    "title": "HPI m/m",
+    "impact": "Low",
+    "forecast": "0.2%",
+    "previous": "0.3%"
+   },
+   {
+    "date": "2026-10-27T09:00:00-04:00",
+    "title": "S&P/CS Composite-20 HPI y/y",
+    "impact": "Low",
+    "forecast": "2.6%",
+    "previous": "2.5%"
+   },
+   {
+    "date": "2026-10-27T10:00:00-04:00",
+    "title": "CB Consumer Confidence",
+    "impact": "Medium",
+    "forecast": "81.2",
+    "previous": "81.9"
+   },
+   {
+    "date": "2026-10-27T10:00:00-04:00",
+    "title": "New Home Sales",
+    "impact": "Low",
+    "forecast": "651K",
+    "previous": "684K"
+   },
+   {
+    "date": "2026-10-27T10:00:00-04:00",
+    "title": "Richmond Manufacturing Index",
+    "impact": "Low",
+    "forecast": "0",
+    "previous": "-2"
+   },
+   {
+    "date": "2026-10-27T16:30:00-04:00",
+    "title": "API Weekly Statistical Bulletin",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-28T08:30:00-04:00",
+    "title": "Goods Trade Balance",
+    "impact": "Low",
+    "forecast": "-130.4B",
+    "previous": "-132.6B"
+   },
+   {
+    "date": "2026-10-28T08:30:00-04:00",
+    "title": "Prelim Wholesale Inventories m/m",
+    "impact": "Low",
+    "forecast": "0.5%",
+    "previous": "0.7%"
+   },
+   {
+    "date": "2026-10-28T10:30:00-04:00",
+    "title": "Crude Oil Inventories",
+    "impact": "Low",
+    "forecast": "-0.1M",
+    "previous": "-3.1M"
+   },
+   {
+    "date": "2026-10-28T14:00:00-04:00",
+    "title": "Federal Funds Rate",
+    "impact": "High",
+    "forecast": "4.00%",
+    "previous": "4.00%"
+   },
+   {
+    "date": "2026-10-28T14:00:00-04:00",
+    "title": "FOMC Statement",
+    "impact": "High",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-28T14:30:00-04:00",
+    "title": "FOMC Press Conference",
+    "impact": "High",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Advance GDP q/q",
+    "impact": "High",
+    "forecast": "3.2%",
+    "previous": "1.5%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Core PCE Price Index m/m",
+    "impact": "High",
+    "forecast": "0.3%",
+    "previous": "0.2%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Advance GDP Price Index q/q",
+    "impact": "Medium",
+    "forecast": "3.3%",
+    "previous": "6.2%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Unemployment Claims",
+    "impact": "Medium",
+    "forecast": "198K",
+    "previous": "194K"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Personal Income m/m",
+    "impact": "Low",
+    "forecast": "0.3%",
+    "previous": "0.2%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Personal Spending m/m",
+    "impact": "Low",
+    "forecast": "0.6%",
+    "previous": "0.9%"
+   },
+   {
+    "date": "2026-10-29T10:30:00-04:00",
+    "title": "Natural Gas Storage",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "77B"
+   },
+   {
+    "date": "2026-10-30T08:30:00-04:00",
+    "title": "Employment Cost Index q/q",
+    "impact": "Medium",
+    "forecast": "0.8%",
+    "previous": "0.9%"
+   },
+   {
+    "date": "2026-10-30T09:45:00-04:00",
+    "title": "Chicago PMI",
+    "impact": "Low",
+    "forecast": "55.8",
+    "previous": "58.8"
+   },
+   {
+    "date": "2026-10-30T12:00:00-04:00",
+    "title": "FOMC Member Daly Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-30T12:30:00-04:00",
+    "title": "FOMC Member Musalem Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   }
+  ],
+  "earnings": [
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft Corporation",
+    "time": "time-after-hours",
+    "eps_forecast": "$4.71",
+    "market_cap": "$3,955,314,920,000"
+   },
+   {
+    "symbol": "GOOG",
+    "name": "Alphabet Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$2.94",
+    "market_cap": "$3,874,463,940,000"
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$2.94",
+    "market_cap": "$3,874,463,940,000"
+   },
+   {
+    "symbol": "GEV",
+    "name": "GE Vernova Inc.",
+    "time": "time-pre-market",
+    "eps_forecast": "$4.03",
+    "market_cap": "$227,747,168,000"
+   },
+   {
+    "symbol": "KLAC",
+    "name": "KLA Corporation ",
+    "time": "time-after-hours",
+    "eps_forecast": "$1.18",
+    "market_cap": "$194,720,023,000"
+   },
+   {
+    "symbol": "SAN",
+    "name": "Banco Santander, S.A.",
+    "time": "time-pre-market",
+    "eps_forecast": "$0.26",
+    "market_cap": "$186,069,713,000"
+   },
+   {
+    "symbol": "APH",
+    "name": "Amphenol Corporation",
+    "time": "time-pre-market",
+    "eps_forecast": "$0.73",
+    "market_cap": "$185,613,337,000"
+   },
+   {
+    "symbol": "NOW",
+    "name": "ServiceNow, Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$0.56",
+    "market_cap": "$163,558,113,000"
+   },
+   {
+    "symbol": "TMUS",
+    "name": "T-Mobile US, Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$2.86",
+    "market_cap": "$157,607,641,000"
+   },
+   {
+    "symbol": "UBS",
+    "name": "UBS AG",
+    "time": "time-pre-market",
+    "eps_forecast": "$0.91",
+    "market_cap": "$144,185,606,000"
+   },
+   {
+    "symbol": "BBVA",
+    "name": "Banco Bilbao Vizcaya Argentaria S.A.",
+    "time": "time-after-hours",
+    "eps_forecast": "$0.62",
+    "market_cap": "$143,646,474,000"
+   },
+   {
+    "symbol": "FTNT",
+    "name": "Fortinet, Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$0.77",
+    "market_cap": "$134,511,722,000"
+   },
+   {
+    "symbol": "ADP",
+    "name": "Automatic Data Processing, Inc.",
+    "time": "time-pre-market",
+    "eps_forecast": "$2.78",
+    "market_cap": "$119,319,265,000"
+   },
+   {
+    "symbol": "PSX",
+    "name": "Phillips 66",
+    "time": "time-pre-market",
+    "eps_forecast": "$11.97",
+    "market_cap": "$115,257,188,000"
+   },
+   {
+    "symbol": "GSK",
+    "name": "GSK plc",
+    "time": "time-pre-market",
+    "eps_forecast": "$1.40",
+    "market_cap": "$102,490,866,000"
+   },
+   {
+    "symbol": "EQIX",
+    "name": "Equinix, Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$9.28",
+    "market_cap": "$95,479,661,000"
+   },
+   {
+    "symbol": "AEM",
+    "name": "Agnico Eagle Mines Limited",
+    "time": "time-after-hours",
+    "eps_forecast": "$2.44",
+    "market_cap": "$89,273,328,000"
+   },
+   {
+    "symbol": "CP",
+    "name": "Canadian Pacific Kansas City Limited",
+    "time": "time-after-hours",
+    "eps_forecast": "$0.95",
+    "market_cap": "$80,168,796,000"
+   },
+   {
+    "symbol": "VRT",
+    "name": "Vertiv Holdings, LLC",
+    "time": "time-pre-market",
+    "eps_forecast": "$1.82",
+    "market_cap": "$76,912,935,000"
+   },
+   {
+    "symbol": "ORLY",
+    "name": "O'Reilly Automotive, Inc.",
+    "time": "time-after-hours",
+    "eps_forecast": "$0.93",
+    "market_cap": "$73,655,878,000"
+   }
+  ]
+ },
+ "news": {
+  "CNBC": [
+   {
+    "title": "Early third-quarter earnings show a 'resilient' U.S. consumer, with signs of strain",
+    "link": "https://www.cnbc.com/2026/10/27/q3-earnings-resilient-consumer.html",
+    "published": "Tue, 27 Oct 2026 21:12:55 GMT"
+   },
+   {
+    "title": "Speaker Mike Johnson calls election-transfer concerns ‘absurd’",
+    "link": "https://www.cnbc.com/2026/10/27/speaker-johnson-peaceful-transfer-midterms.html",
+    "published": "Tue, 27 Oct 2026 22:35:25 GMT"
+   },
+   {
+    "title": "SK Hynix third-quarter profit sharply beats estimates on AI memory boost",
+    "link": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
+    "published": "Wed, 28 Oct 2026 00:09:17 GMT"
+   },
+   {
+    "title": "Amazon's anti-tokenmaxxing memo says engineers should be pickier about using AI",
+    "link": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
+    "published": "Tue, 27 Oct 2026 18:57:45 GMT"
+   },
+   {
+    "title": "Indian investors rush to Nvidia, SpaceX, Apple as local trading apps roll out access to U.S. stocks",
+    "link": "https://www.cnbc.com/2026/10/28/india-us-stocks-retail-access.html",
+    "published": "Wed, 28 Oct 2026 00:14:24 GMT"
+   },
+   {
+    "title": "Trump administration may let more Russian diesel onto market, energy secretary tells CNBC",
+    "link": "https://www.cnbc.com/2026/10/27/trump-putin-zelenskyy-russia-ukraine-diesel.html",
+    "published": "Tue, 27 Oct 2026 22:18:59 GMT"
+   },
+   {
+    "title": "Grand jury rejects DOJ bid to indict ex-Trump WH aide Cassidy Hutchinson: Reports",
+    "link": "https://www.cnbc.com/2026/10/27/cassidy-hutchinson-doj-grand-jury-trump.html",
+    "published": "Tue, 27 Oct 2026 23:50:03 GMT"
+   },
+   {
+    "title": "Chart: Anthropic's cash pile towers over nearly every U.S. company",
+    "link": "https://www.cnbc.com/2026/10/27/anthropic-cash-investments-ipo.html",
+    "published": "Tue, 27 Oct 2026 23:03:09 GMT"
+   },
+   {
+    "title": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' — investors are split",
+    "link": "https://www.cnbc.com/2026/10/27/-anthropic-ipo-investors-growth-losses-s-1.html",
+    "published": "Tue, 27 Oct 2026 17:26:34 GMT"
+   },
+   {
+    "title": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
+    "link": "https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html",
+    "published": "Mon, 26 Oct 2026 22:50:07 GMT"
+   },
+   {
+    "title": "Jim Cramer warns investors not to get fooled by the latest AI stock rally",
+    "link": "https://www.cnbc.com/2026/10/27/jim-cramer-ai-trade-financing-risks.html",
+    "published": "Tue, 27 Oct 2026 22:24:19 GMT"
+   },
+   {
+    "title": "Neil Young sues Trump committee for $10M for playing 'Rockin' in the Free World' at rally",
+    "link": "https://www.cnbc.com/2026/10/27/neil-young-trump-lawsuit-song-copyright-free-world.html",
+    "published": "Tue, 27 Oct 2026 19:49:18 GMT"
+   }
+  ],
+  "MarketWatch": [
+   {
+    "title": "Retail traders buy the dip on chip stocks — but Robinhood gets burned by the crypto market",
+    "link": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 22:51:00 GMT"
+   },
+   {
+    "title": "‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
+    "link": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 22:18:00 GMT"
+   },
+   {
+    "title": "CoreWeave and other AI stocks rise as Anthropic restores the market’s faith in sustained spending",
+    "link": "https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 21:41:00 GMT"
+   },
+   {
+    "title": "As Trump touts energy companies’ fortunes, U.S. consumers face the most expensive year for gas prices ever",
+    "link": "https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 21:29:00 GMT"
+   },
+   {
+    "title": "The rest of the market is leaving Big Tech behind after a historic comeback",
+    "link": "https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 21:28:00 GMT"
+   },
+   {
+    "title": "My husband wants to sell our $1.5 million home and downsize. But this is where we raised our kids — and I can’t bear to leave.",
+    "link": "https://www.marketwatch.com/story/my-husband-wants-to-sell-our-1-5-million-home-and-invest-the-proceeds-but-this-is-where-we-raised-our-kids-and-i-cant-bear-to-leave-4feb46ed?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 21:00:00 GMT"
+   },
+   {
+    "title": "The big reason Boeing’s stock is falling so hard after earnings",
+    "link": "https://www.marketwatch.com/story/the-big-reason-boeings-stock-is-falling-so-hard-after-earnings-d31b400d?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 20:43:00 GMT"
+   },
+   {
+    "title": "How Broadcom’s stock can surge and overcome ‘the biggest dislocation in the market’",
+    "link": "https://www.marketwatch.com/story/how-broadcoms-stock-can-surge-and-overcome-the-biggest-dislocation-in-the-market-9719e2a8?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 20:40:00 GMT"
+   },
+   {
+    "title": "JetBlue has been losing money for years. It just charted a path to profitability.",
+    "link": "https://www.marketwatch.com/story/jetblue-has-been-losing-money-for-years-it-just-charted-a-path-to-profitability-03be75c8?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 20:38:00 GMT"
+   },
+   {
+    "title": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
+    "link": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
+    "published": "Tue, 27 Oct 2026 20:30:00 GMT"
+   }
+  ],
+  "SeekingAlpha": [
+   {
+    "title": "NXP outlines $3.85B Q4 revenue and 60% 2027 gross margin as it adds $5B buyback",
+    "link": "https://seekingalpha.com/news/4658557-nxp-outlines-3_85b-q4-revenue-and-60-percent-2027-gross-margin-as-it-adds-5b-buyback?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 20:31:25 -0400"
+   },
+   {
+    "title": "Royal Caribbean outlines $17.85-$17.95 2026 adjusted EPS while advancing Sandals/Beaches deal for early 2027 close",
+    "link": "https://seekingalpha.com/news/4658556-royal-caribbean-outlines-17_85-17_95-2026-adjusted-eps-while-advancing-sandals-beaches-deal?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 20:31:21 -0400"
+   },
+   {
+    "title": "Robinhood targets $2.675B-$2.75B 2026 adjusted OpEx as it plans 24/7 equity trading later this year",
+    "link": "https://seekingalpha.com/news/4658555-robinhood-targets-2_675b-2_75b-2026-adjusted-opex-as-it-plans-24-7-equity-trading-later-this?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 20:13:26 -0400"
+   },
+   {
+    "title": "Manhattan Associates outlines 21% 2026 RPO growth outlook while raising full-year revenue to $1.176B-$1.178B",
+    "link": "https://seekingalpha.com/news/4658554-manhattan-associates-outlines-21-percent-2026-rpo-growth-outlook-while-raising-full-year?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 20:10:59 -0400"
+   },
+   {
+    "title": "Hanmi signals 2027 low- to mid-single-digit loan growth as payoffs ease",
+    "link": "https://seekingalpha.com/news/4658553-hanmi-signals-2027-low-to-mid-single-digit-loan-growth-as-payoffs-ease?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 19:50:54 -0400"
+   },
+   {
+    "title": "Trump administration discussing Russian deals with U.S. oil firms in Ukraine peace talks - FT",
+    "link": "https://seekingalpha.com/news/4658549-trump-administration-discussing-russian-deals-with-us-oil-firms-in-ukraine-peace-talks---ft?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 19:45:19 -0400"
+   },
+   {
+    "title": "Rogers forecasts Q4 revenue of $215M-$225M with 16% adjusted EBITDA increase",
+    "link": "https://seekingalpha.com/news/4658552-rogers-forecasts-q4-revenue-of-215m-225m-with-16-percent-adjusted-ebitda-increase?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Tue, 27 Oct 2026 19:31:08 -0400"
+   }
+  ],
+  "Fed": [
+   {
+    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm]]>",
+    "published": "<![CDATA[Fri, 16 Oct 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm]]>",
+    "published": "<![CDATA[Tue, 13 Oct 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm]]>",
+    "published": "<![CDATA[Fri, 9 Oct 2026 14:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm]]>",
+    "published": "<![CDATA[Thu, 8 Oct 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm]]>",
+    "published": "<![CDATA[Wed, 7 Oct 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm]]>",
+    "published": "<![CDATA[Mon, 5 Oct 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm]]>",
+    "published": "<![CDATA[Fri, 2 Oct 2026 20:45:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm]]>",
+    "published": "<![CDATA[Fri, 2 Oct 2026 20:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm]]>",
+    "published": "<![CDATA[Fri, 2 Oct 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm]]>",
+    "published": "<![CDATA[Wed, 30 Sep 2026 13:00:00 GMT]]>"
+   },
+   {
+    "title": "Agencies publish resolution plan feedback letters for 15 banking organizations",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm]]>",
+    "published": "<![CDATA[Tue, 29 Sep 2026 20:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm]]>",
+    "published": "<![CDATA[Fri, 25 Sep 2026 20:30:00 GMT]]>"
+   }
+  ]
+ },
+ "gap_accuracy": {
+  "samples": 4,
+  "hit_rate": 100.0,
+  "recent": [
+   {
+    "kst_date": "2026-10-15",
+    "us_session": "2026-10-14",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-16",
+    "us_session": "2026-10-15",
+    "forecast_pct": 3.97,
+    "band": [
+     2.78,
+     3.97
+    ],
+    "actual_gap_pct": 1.8,
+    "hit": true
+   },
+   {
+    "kst_date": "2026-10-17",
+    "us_session": "2026-10-16",
+    "forecast_pct": -2.89,
+    "band": [
+     -2.02,
+     -2.89
+    ],
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-20",
+    "us_session": "2026-10-19",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-21",
+    "us_session": "2026-10-20",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-22",
+    "us_session": "2026-10-21",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-23",
+    "us_session": "2026-10-22",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-24",
+    "us_session": "2026-10-23",
+    "forecast_pct": 0.49,
+    "band": [
+     0.34,
+     0.49
+    ],
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-27",
+    "us_session": "2026-10-26",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-28",
+    "us_session": "2026-10-27",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   }
+  ]
+ }
+}
