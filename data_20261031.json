@@ -1,0 +1,822 @@
+{
+ "_meta": {
+  "script_version": "v2026.09.24-2",
+  "built_kst": "2026-10-31T09:59:12.994993+00:00",
+  "us_session": "2026-10-30",
+  "kst_date": "2026-10-31"
+ },
+ "_sources": {
+  "yfinance_bulk": {
+   "ok": true,
+   "n": 367,
+   "sec": 8.8
+  },
+  "indices": {
+   "ok": true,
+   "n": 15,
+   "sec": 0.0
+  },
+  "asia": {
+   "ok": true,
+   "n": 6,
+   "sec": 0.0
+  },
+  "kr_adr": {
+   "ok": true,
+   "n": 7,
+   "sec": 0.0
+  },
+  "sectors": {
+   "ok": true,
+   "n": 11,
+   "sec": 0.0
+  },
+  "themes": {
+   "ok": true,
+   "n": 71,
+   "sec": 0.1
+  },
+  "radar": {
+   "ok": false,
+   "err": "'DataFrame' object has no attribute 'vol_ratio'",
+   "sec": 0.5
+  },
+  "ewy_spread": {
+   "ok": false,
+   "err": "EWY에 2026-10-30 데이터 없음",
+   "sec": 0.1
+  },
+  "fred": {
+   "ok": true,
+   "n": 12,
+   "sec": 302.0
+  },
+  "econ_calendar": {
+   "ok": true,
+   "n": 27,
+   "sec": 0.1
+  },
+  "earnings_calendar": {
+   "ok": true,
+   "n": 0,
+   "sec": 2.2
+  },
+  "rss_CNBC": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.2
+  },
+  "rss_MarketWatch": {
+   "ok": true,
+   "n": 10,
+   "sec": 0.1
+  },
+  "rss_YahooFinance": {
+   "ok": false,
+   "err": "HTTP Error 404: Not Found",
+   "sec": 0.1
+  },
+  "rss_SeekingAlpha": {
+   "ok": true,
+   "n": 7,
+   "sec": 0.1
+  },
+  "rss_Fed": {
+   "ok": true,
+   "n": 12,
+   "sec": 0.1
+  }
+ },
+ "indices": {
+  "^GSPC": {
+   "name": "S&P500",
+   "group": null,
+   "last": 7580.07,
+   "chg_pct": -1.82,
+   "y1_low": 6343.72,
+   "y1_high": 7818.93,
+   "y1_pos": 83.8
+  },
+  "^IXIC": {
+   "name": "나스닥",
+   "group": null,
+   "last": 25437.0,
+   "chg_pct": -2.86,
+   "y1_low": 20794.64,
+   "y1_high": 27599.79,
+   "y1_pos": 68.2
+  },
+  "^DJI": {
+   "name": "다우",
+   "group": null,
+   "last": 51770.31,
+   "chg_pct": -1.09,
+   "y1_low": 45166.64,
+   "y1_high": 54349.12,
+   "y1_pos": 71.9
+  },
+  "^RUT": {
+   "name": "러셀2000",
+   "group": null,
+   "last": 2811.84,
+   "chg_pct": -1.66,
+   "y1_low": 2305.11,
+   "y1_high": 3068.42,
+   "y1_pos": 66.4
+  },
+  "^SOX": {
+   "name": "필라델피아반도체",
+   "group": null,
+   "last": 10688.8,
+   "chg_pct": -7.2,
+   "y1_low": 6352.07,
+   "y1_high": 14634.72,
+   "y1_pos": 52.4
+  },
+  "^VIX": {
+   "name": "VIX",
+   "group": null,
+   "last": 19.42,
+   "chg_pct": 12.91,
+   "y1_low": 13.47,
+   "y1_high": 31.05,
+   "y1_pos": 33.8
+  },
+  "^VIX9D": {
+   "name": "VIX 9일",
+   "group": null,
+   "last": 19.25,
+   "chg_pct": 21.3,
+   "y1_low": 9.17,
+   "y1_high": 30.64,
+   "y1_pos": 46.9
+  },
+  "^VIX3M": {
+   "name": "VIX 3개월",
+   "group": null,
+   "last": 20.78,
+   "chg_pct": 7.28,
+   "y1_low": 17.42,
+   "y1_high": 29.27,
+   "y1_pos": 28.4
+  },
+  "^TNX": {
+   "name": "미국채10년",
+   "group": null,
+   "last": 4.93,
+   "chg_pct": -1.2,
+   "y1_low": 3.96,
+   "y1_high": 5.31,
+   "y1_pos": 71.7
+  },
+  "DX-Y.NYB": {
+   "name": "달러인덱스",
+   "group": null,
+   "last": 101.96,
+   "chg_pct": -0.07,
+   "y1_low": 96.22,
+   "y1_high": 102.58,
+   "y1_pos": 90.3
+  },
+  "CL=F": {
+   "name": "WTI",
+   "group": null,
+   "last": 102.95,
+   "chg_pct": 0.93,
+   "y1_low": 55.27,
+   "y1_high": 112.95,
+   "y1_pos": 82.7
+  },
+  "GC=F": {
+   "name": "금",
+   "group": null,
+   "last": 3884.9,
+   "chg_pct": -3.63,
+   "y1_low": 3884.9,
+   "y1_high": 5318.4,
+   "y1_pos": 0.0
+  },
+  "KRW=X": {
+   "name": "원달러",
+   "group": null,
+   "last": 1337.98,
+   "chg_pct": -0.18,
+   "y1_low": 1321.76,
+   "y1_high": 1554.48,
+   "y1_pos": 7.0
+  },
+  "EWY": null,
+  "BTC-USD": null
+ },
+ "asia": {
+  "^N225": {
+   "name": "니케이225",
+   "last": 64659.47,
+   "chg_pct": 1.1,
+   "asof": "2026-10-29"
+  },
+  "^TWII": {
+   "name": "대만가권",
+   "last": 46368.33,
+   "chg_pct": -1.42,
+   "asof": "2026-10-29"
+  },
+  "^HSI": {
+   "name": "항셍",
+   "last": 22958.65,
+   "chg_pct": -0.59,
+   "asof": "2026-10-29"
+  },
+  "000001.SS": {
+   "name": "상해종합",
+   "last": 3651.43,
+   "chg_pct": -0.82,
+   "asof": "2026-10-29"
+  },
+  "ES=F": {
+   "name": "S&P선물",
+   "last": 7614.5,
+   "chg_pct": -1.8,
+   "asof": "2026-10-30"
+  },
+  "NQ=F": {
+   "name": "나스닥선물",
+   "last": 28543.0,
+   "chg_pct": -3.45,
+   "asof": "2026-10-30"
+  }
+ },
+ "kr_adr": {
+  "PKX": null,
+  "SKM": null,
+  "KB": null,
+  "SHG": null,
+  "WF": null,
+  "LPL": null,
+  "KT": null
+ },
+ "sectors": {
+  "XLK": null,
+  "XLC": null,
+  "XLY": null,
+  "XLP": null,
+  "XLE": null,
+  "XLF": null,
+  "XLV": null,
+  "XLI": null,
+  "XLB": null,
+  "XLU": null,
+  "XLRE": null
+ },
+ "themes": {},
+ "radar": null,
+ "ewy_spread": null,
+ "fred": {
+  "DGS10": {
+   "name": "미국채10년",
+   "error": "The read operation timed out"
+  },
+  "DGS2": {
+   "name": "미국채2년",
+   "error": "The read operation timed out"
+  },
+  "T10Y2Y": {
+   "name": "장단기금리차",
+   "error": "The read operation timed out"
+  },
+  "T10YIE": {
+   "name": "기대인플레10년",
+   "error": "The read operation timed out"
+  },
+  "BAMLH0A0HYM2": {
+   "name": "하이일드스프레드",
+   "error": "The read operation timed out"
+  },
+  "BAMLC0A0CM": {
+   "name": "투자등급스프레드",
+   "error": "The read operation timed out"
+  },
+  "UNRATE": {
+   "name": "실업률",
+   "error": "The read operation timed out"
+  },
+  "FEDFUNDS": {
+   "name": "기준금리",
+   "error": "The read operation timed out"
+  },
+  "ICSA": {
+   "name": "신규실업수당",
+   "error": "The read operation timed out"
+  },
+  "PAYEMS": {
+   "name": "비농업고용",
+   "error": "The read operation timed out"
+  },
+  "CPIAUCSL": {
+   "name": "소비자물가",
+   "error": "The read operation timed out"
+  },
+  "CPILFESL": {
+   "name": "근원물가",
+   "error": "The read operation timed out"
+  }
+ },
+ "calendar": {
+  "economic": [
+   {
+    "date": "2026-10-27T08:15:00-04:00",
+    "title": "ADP Weekly Employment Change",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "18.5K"
+   },
+   {
+    "date": "2026-10-27T08:30:00-04:00",
+    "title": "Core Durable Goods Orders m/m",
+    "impact": "Low",
+    "forecast": "0.6%",
+    "previous": "0.3%"
+   },
+   {
+    "date": "2026-10-27T08:30:00-04:00",
+    "title": "Durable Goods Orders m/m",
+    "impact": "Low",
+    "forecast": "2.0%",
+    "previous": "0.0%"
+   },
+   {
+    "date": "2026-10-27T09:00:00-04:00",
+    "title": "HPI m/m",
+    "impact": "Low",
+    "forecast": "0.2%",
+    "previous": "0.3%"
+   },
+   {
+    "date": "2026-10-27T09:00:00-04:00",
+    "title": "S&P/CS Composite-20 HPI y/y",
+    "impact": "Low",
+    "forecast": "2.6%",
+    "previous": "2.5%"
+   },
+   {
+    "date": "2026-10-27T10:00:00-04:00",
+    "title": "CB Consumer Confidence",
+    "impact": "Medium",
+    "forecast": "81.2",
+    "previous": "81.9"
+   },
+   {
+    "date": "2026-10-27T10:00:00-04:00",
+    "title": "New Home Sales",
+    "impact": "Low",
+    "forecast": "651K",
+    "previous": "684K"
+   },
+   {
+    "date": "2026-10-27T10:00:00-04:00",
+    "title": "Richmond Manufacturing Index",
+    "impact": "Low",
+    "forecast": "0",
+    "previous": "-2"
+   },
+   {
+    "date": "2026-10-27T16:30:00-04:00",
+    "title": "API Weekly Statistical Bulletin",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-28T08:30:00-04:00",
+    "title": "Goods Trade Balance",
+    "impact": "Low",
+    "forecast": "-130.4B",
+    "previous": "-132.6B"
+   },
+   {
+    "date": "2026-10-28T08:30:00-04:00",
+    "title": "Prelim Wholesale Inventories m/m",
+    "impact": "Low",
+    "forecast": "0.5%",
+    "previous": "0.7%"
+   },
+   {
+    "date": "2026-10-28T10:30:00-04:00",
+    "title": "Crude Oil Inventories",
+    "impact": "Low",
+    "forecast": "0.1M",
+    "previous": "-3.1M"
+   },
+   {
+    "date": "2026-10-28T14:00:00-04:00",
+    "title": "Federal Funds Rate",
+    "impact": "High",
+    "forecast": "4.00%",
+    "previous": "4.00%"
+   },
+   {
+    "date": "2026-10-28T14:00:00-04:00",
+    "title": "FOMC Statement",
+    "impact": "High",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-28T14:30:00-04:00",
+    "title": "FOMC Press Conference",
+    "impact": "High",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Advance GDP q/q",
+    "impact": "High",
+    "forecast": "3.2%",
+    "previous": "1.5%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Core PCE Price Index m/m",
+    "impact": "High",
+    "forecast": "0.3%",
+    "previous": "0.2%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Advance GDP Price Index q/q",
+    "impact": "Medium",
+    "forecast": "3.2%",
+    "previous": "6.2%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Unemployment Claims",
+    "impact": "Medium",
+    "forecast": "198K",
+    "previous": "194K"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Personal Income m/m",
+    "impact": "Low",
+    "forecast": "0.3%",
+    "previous": "0.2%"
+   },
+   {
+    "date": "2026-10-29T08:30:00-04:00",
+    "title": "Personal Spending m/m",
+    "impact": "Low",
+    "forecast": "0.6%",
+    "previous": "0.9%"
+   },
+   {
+    "date": "2026-10-29T10:30:00-04:00",
+    "title": "Natural Gas Storage",
+    "impact": "Low",
+    "forecast": "75B",
+    "previous": "77B"
+   },
+   {
+    "date": "2026-10-30T08:30:00-04:00",
+    "title": "Employment Cost Index q/q",
+    "impact": "Medium",
+    "forecast": "0.8%",
+    "previous": "0.9%"
+   },
+   {
+    "date": "2026-10-30T09:45:00-04:00",
+    "title": "Chicago PMI",
+    "impact": "Low",
+    "forecast": "55.8",
+    "previous": "58.8"
+   },
+   {
+    "date": "2026-10-30T12:00:00-04:00",
+    "title": "FOMC Member Daly Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-30T12:30:00-04:00",
+    "title": "FOMC Member Musalem Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "date": "2026-10-30T13:30:00-04:00",
+    "title": "FOMC Member Logan Speaks",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   }
+  ],
+  "earnings": []
+ },
+ "news": {
+  "CNBC": [
+   {
+    "title": "Intel stock has worst day since 1970s, wiping about $12 billion off government's stake",
+    "link": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
+    "published": "Fri, 30 Oct 2026 20:30:57 GMT"
+   },
+   {
+    "title": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+    "link": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
+    "published": "Fri, 30 Oct 2026 17:15:53 GMT"
+   },
+   {
+    "title": "Alaska Senate election: DOJ wants to 'segregate' all ballots for 2nd Sullivan candidate",
+    "link": "https://www.cnbc.com/2026/10/30/alaska-senate-election-doj-lawsuit-sullivan-peltola.html",
+    "published": "Fri, 30 Oct 2026 22:57:55 GMT"
+   },
+   {
+    "title": "Halloween gets pricier as chocolate costs climb — Hershey may feel the pinch",
+    "link": "https://www.cnbc.com/2026/10/30/halloween-gets-pricier-as-chocolate-costs-rise-hershey-could-feel-it.html",
+    "published": "Fri, 30 Oct 2026 16:55:41 GMT"
+   },
+   {
+    "title": "Reid Hoffman gives millions to Dems in late spending spree as Epstein fight spills into election",
+    "link": "https://www.cnbc.com/2026/10/30/reid-hoffman-democrats-epstein-midterms-2026.html",
+    "published": "Fri, 30 Oct 2026 18:32:17 GMT"
+   },
+   {
+    "title": "Meta outlook revised downward by S&P on cash flow and capex concerns",
+    "link": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html",
+    "published": "Fri, 30 Oct 2026 22:42:26 GMT"
+   },
+   {
+    "title": "Binance loses $6.3 billion in crypto heist—what happens to your money when an exchange gets hacked",
+    "link": "https://www.cnbc.com/make-it/2026/10/30/binance-crypto-hack-customer-funds.html",
+    "published": "Fri, 30 Oct 2026 21:45:52 GMT"
+   },
+   {
+    "title": "Jim Cramer says it's time to look beyond tech. Here are 4 consumer stocks he likes",
+    "link": "https://www.cnbc.com/2026/10/30/jim-cramer-consumer-staples-stocks.html",
+    "published": "Fri, 30 Oct 2026 22:52:04 GMT"
+   },
+   {
+    "title": "Binance hack: Investigators in a 'cat and mouse game' to recover $6.3 billion in stolen funds",
+    "link": "https://www.cnbc.com/2026/10/30/binance-hack-stolen-crypto-recovery.html",
+    "published": "Fri, 30 Oct 2026 19:27:03 GMT"
+   },
+   {
+    "title": "'Bad time to troll': Binance co-founder Zhao asks Musk for support after hack",
+    "link": "https://www.cnbc.com/2026/10/30/binance-hack-elon-musk-tesla-spacex.html",
+    "published": "Fri, 30 Oct 2026 20:02:45 GMT"
+   },
+   {
+    "title": "Why bitcoin held up better after the record Binance hack",
+    "link": "https://www.cnbc.com/2026/10/30/binance-hack-bitcoin-price.html",
+    "published": "Fri, 30 Oct 2026 18:07:00 GMT"
+   },
+   {
+    "title": "Cramer’s week ahead: Expect more volatility as tech earnings, midterms loom",
+    "link": "https://www.cnbc.com/2026/10/30/jim-cramer-week-ahead-apple-amd-jobs-report.html",
+    "published": "Fri, 30 Oct 2026 22:17:13 GMT"
+   }
+  ],
+  "MarketWatch": [
+   {
+    "title": "Has the tech bubble burst? Why the Nasdaq’s rough ride looks eerily like 2000.",
+    "link": "https://www.marketwatch.com/story/has-the-tech-bubble-burst-why-the-nasdaqs-rough-ride-looks-eerily-like-2000-5bcefcb2?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 23:14:00 GMT"
+   },
+   {
+    "title": "This cybersecurity stock will be the next to join the S&P 500",
+    "link": "https://www.marketwatch.com/story/this-cybersecurity-stock-will-be-the-next-to-join-the-s-p-500-dc976803?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 22:20:00 GMT"
+   },
+   {
+    "title": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
+    "link": "https://www.marketwatch.com/story/why-gold-plunged-to-its-lowest-price-in-a-year-despite-renewed-iran-jitters-365be0e2?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 21:30:00 GMT"
+   },
+   {
+    "title": "Warsh wants the Fed to say less. Two officials are pushing for more transparency.",
+    "link": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 21:23:00 GMT"
+   },
+   {
+    "title": "In a wild October for markets, these stocks were the biggest winners and losers",
+    "link": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 20:52:00 GMT"
+   },
+   {
+    "title": "Why Intel’s stock saw its worst day in decades — and a $140 billion wipeout",
+    "link": "https://www.marketwatch.com/story/why-intels-stock-is-sinking-toward-its-worst-drop-in-two-years-492d71a7?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 20:48:00 GMT"
+   },
+   {
+    "title": "Reddit’s stock logs its biggest one-day drop ever. It’s not the last of the bad news, analysts say.",
+    "link": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 20:42:00 GMT"
+   },
+   {
+    "title": "Microsoft is winning the cloud wars and becoming Wall Street’s new golden child",
+    "link": "https://www.marketwatch.com/story/microsoft-is-winning-the-cloud-wars-and-becoming-wall-streets-new-golden-child-62eecbbd?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 20:29:00 GMT"
+   },
+   {
+    "title": "AMD’s stock slides after Intel earnings reveal two big issues",
+    "link": "https://www.marketwatch.com/story/amds-stock-slides-after-intel-earnings-reveal-two-big-issues-d3afed91?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 20:28:00 GMT"
+   },
+   {
+    "title": "The selloff in tech stocks is shifting into overdrive",
+    "link": "https://www.marketwatch.com/story/the-selloff-in-tech-stocks-is-shifting-into-overdrive-afb50975?mod=mw_rss_topstories",
+    "published": "Fri, 30 Oct 2026 20:26:00 GMT"
+   }
+  ],
+  "SeekingAlpha": [
+   {
+    "title": "Crude oil jumps as Iran says four tankers struck mines in the Strait of Hormuz",
+    "link": "https://seekingalpha.com/news/4661798-crude-oil-jumps-as-iran-says-four-tankers-struck-mines-in-the-strait-of-hormuz?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 19:55:15 -0400"
+   },
+   {
+    "title": "Acco Brands expects 4%-6% 2026 sales growth as it raises adjusted EPS to $0.98-$1.02 following Trust acquisition",
+    "link": "https://seekingalpha.com/news/4661801-acco-brands-expects-4-percentminus-6-percent-2026-sales-growth-as-it-raises-adjusted-eps-to?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 19:31:00 -0400"
+   },
+   {
+    "title": "W&T Offshore forecasts Q4 2026 production midpoint of 33,700 BOE/d while lifting 2026 capex to $35M-$38M",
+    "link": "https://seekingalpha.com/news/4661800-w-and-t-offshore-forecasts-q4-2026-production-midpoint-of-33700-boe-d-while-lifting-2026?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 18:59:39 -0400"
+   },
+   {
+    "title": "Federal Realty signals $7.54-$7.58 core FFO per share guidance while integrating $508M The Summit acquisition",
+    "link": "https://seekingalpha.com/news/4661799-federal-realty-signals-7_54-7_58-core-ffo-per-share-guidance-while-integrating-508m-the?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 18:49:33 -0400"
+   },
+   {
+    "title": "Exxon plans to spend $10B on refining business to boost margins, CEO says",
+    "link": "https://seekingalpha.com/news/4661795-exxon-plans-to-spend-10b-on-refining-business-to-boost-margins-ceo-says?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 18:46:50 -0400"
+   },
+   {
+    "title": "Chevron outlines plan to double Venezuela joint venture output to ~600,000 bpd by 2031",
+    "link": "https://seekingalpha.com/news/4661797-chevron-outlines-plan-to-double-venezuela-joint-venture-output-to-600000-bpd-by-2031?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 18:30:34 -0400"
+   },
+   {
+    "title": "Piper Sandler signals $200M buyback through 2028 as it expects strongest quarter of 2026 in Q4",
+    "link": "https://seekingalpha.com/news/4661796-piper-sandler-signals-200m-buyback-through-2028-as-it-expects-strongest-quarter-of-2026-in-q4?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news",
+    "published": "Fri, 30 Oct 2026 18:29:41 -0400"
+   }
+  ],
+  "Fed": [
+   {
+    "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm]]>",
+    "published": "<![CDATA[Thu, 29 Oct 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve issues FOMC statement",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm]]>",
+    "published": "<![CDATA[Wed, 28 Oct 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm]]>",
+    "published": "<![CDATA[Fri, 16 Oct 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm]]>",
+    "published": "<![CDATA[Tue, 13 Oct 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm]]>",
+    "published": "<![CDATA[Fri, 9 Oct 2026 14:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm]]>",
+    "published": "<![CDATA[Thu, 8 Oct 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm]]>",
+    "published": "<![CDATA[Wed, 7 Oct 2026 18:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm]]>",
+    "published": "<![CDATA[Mon, 5 Oct 2026 20:30:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm]]>",
+    "published": "<![CDATA[Fri, 2 Oct 2026 20:45:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm]]>",
+    "published": "<![CDATA[Fri, 2 Oct 2026 20:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm]]>",
+    "published": "<![CDATA[Fri, 2 Oct 2026 15:00:00 GMT]]>"
+   },
+   {
+    "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+    "link": "<![CDATA[https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm]]>",
+    "published": "<![CDATA[Wed, 30 Sep 2026 13:00:00 GMT]]>"
+   }
+  ]
+ },
+ "gap_accuracy": {
+  "samples": 4,
+  "hit_rate": 100.0,
+  "recent": [
+   {
+    "kst_date": "2026-10-20",
+    "us_session": "2026-10-19",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-21",
+    "us_session": "2026-10-20",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-22",
+    "us_session": "2026-10-21",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-23",
+    "us_session": "2026-10-22",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-24",
+    "us_session": "2026-10-23",
+    "forecast_pct": 0.49,
+    "band": [
+     0.34,
+     0.49
+    ],
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-27",
+    "us_session": "2026-10-26",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-28",
+    "us_session": "2026-10-27",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-29",
+    "us_session": "2026-10-28",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-30",
+    "us_session": "2026-10-29",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   },
+   {
+    "kst_date": "2026-10-31",
+    "us_session": "2026-10-30",
+    "forecast_pct": null,
+    "band": null,
+    "actual_gap_pct": null,
+    "hit": null
+   }
+  ]
+ }
+}
